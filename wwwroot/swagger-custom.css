@@ -1,0 +1,28 @@
+body { background: #f5f3ff; }
+
+/* Barra superior */
+.swagger-ui .topbar { background: #7b2ff0; padding: 16px 0; }
+.swagger-ui .topbar-wrapper a,
+.swagger-ui .topbar .download-url-wrapper { display: none; }
+.swagger-ui .topbar-wrapper::before {
+    content: "🏥  Clínica · Gestión de Citas";
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Título y secciones */
+.swagger-ui .info .title { color: #5b21b6; }
+.swagger-ui .opblock-tag {
+    font-size: 20px;
+    color: #5b21b6;
+    border-bottom: 2px solid #ddd6fe;
+}
+
+/* Botones */
+.swagger-ui .btn.execute { background: #7b2ff0; border-color: #7b2ff0; color: #fff; }
+.swagger-ui .btn.authorize { color: #7b2ff0; border-color: #7b2ff0; }
+
+/* Bloques de cada endpoint */
+.swagger-ui .opblock { border-radius: 10px; }
+.swagger-ui .opblock .opblock-summary-description { font-weight: 600; }
