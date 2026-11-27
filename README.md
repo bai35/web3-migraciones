@@ -20,7 +20,7 @@ con `Scaffold-DbContext`.
    - Cambiar "Gimnasio": "Server=Example\\Example;Database=BDGy.....;" por "....Server=nombredelpc\\nombredelocaldb;........."
      `Server=localhost;Database=BDGymMigraciones;User Id=sa;Password=TuClave;TrustServerCertificate=True;`
    - `ConnectionStrings:Gimnasio` (base `BDGymMigraciones`). Con usuario/clave de SQL Server:  
-   - `Jwt:Clave`: cámbiala por una clave propia de 32 caracteres o más.
+   - `Jwt:Clave`: cambiar por otra , por defecto se usa de pruebas.
 1. **Genera la migración inicial** (una sola vez, crea la carpeta `Migrations/`):
    ```bash
    dotnet restore
