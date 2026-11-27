@@ -16,21 +16,23 @@ con `Scaffold-DbContext`.
 
 ## Instalación y ejecución
 1. Revisa `appsettings.json`:
-   - `ConnectionStrings:Gimnasio` (base `BDGymMigraciones`). Con usuario/clave de SQL Server:
+   
+   - Cambiar "Gimnasio": "Server=Example\\Example;Database=BDGy.....;" por "....Server=nombredelpc\\nombredelocaldb;........."
      `Server=localhost;Database=BDGymMigraciones;User Id=sa;Password=TuClave;TrustServerCertificate=True;`
+   - `ConnectionStrings:Gimnasio` (base `BDGymMigraciones`). Con usuario/clave de SQL Server:  
    - `Jwt:Clave`: cámbiala por una clave propia de 32 caracteres o más.
-2. **Genera la migración inicial** (una sola vez, crea la carpeta `Migrations/`):
+1. **Genera la migración inicial** (una sola vez, crea la carpeta `Migrations/`):
    ```bash
    dotnet restore
    dotnet ef migrations add InitialCreate
    ```
-3. Ejecuta la API. Al arrancar aplica las migraciones (crea la base de datos y las tablas), crea el
+2. Ejecuta la API. Al arrancar aplica las migraciones (crea la base de datos y las tablas), crea el
    procedimiento almacenado y siembra datos mínimos:
    ```bash
    dotnet run
    ```
    (equivalente manual de la parte de la base: `dotnet ef database update`)
-4. Abre Swagger en `http://localhost:5000/` (el puerto real aparece en la consola).
+3. Abre Swagger en `http://localhost:5000/` (el puerto real aparece en la consola).
 
 Si luego cambias las entidades: `dotnet ef migrations add NombreDelCambio` y vuelve a ejecutar.
 
