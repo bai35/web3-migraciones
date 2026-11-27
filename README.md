@@ -10,8 +10,8 @@ con `Scaffold-DbContext`.
 
 ## Requisitos
 - .NET SDK 8
-- SQL Server (Express, LocalDB o Docker)
 - Herramienta de EF Core: `dotnet tool install --global dotnet-ef --version 8.0.10`
+- Tener instalado SQL Server Esxpress , Localdb
 - Postman
 
 ## Instalación y ejecución
